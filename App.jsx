@@ -20,6 +20,7 @@ import {
   Palette,
   ShieldCheck,
   Database,
+  Instagram,
 } from "lucide-react";
 
 const langLabels = { en: "EN", uz: "UZ", ru: "RU" };
@@ -32,7 +33,7 @@ const data = {
     badge: "Practical IT education in Namangan",
     heroTitle: "Learn real skills for IT, design, English, and modern work.",
     heroText:
-      "IT School Namangan teaches practical courses for beginners and future professionals: computer literacy, web development, graphic design, AutoCAD & 3D Max, cybersecurity, Python, and English for work communication.",
+      "IT School Namangan teaches practical courses for beginners and future professionals: computer literacy, web development, graphic design, AutoCAD & 3D Max, cybersecurity, Python, and English[...]",
     primaryBtn: "View Courses",
     secondaryBtn: "Contact Us",
     apply: "Apply Now",
@@ -87,10 +88,11 @@ const data = {
     contactLabel: "Contact",
     contactTitle: "Visit IT School Namangan.",
     contactText: "Contact us for course information, group schedules, pricing, and student registration.",
-    phoneLabel: "Phone / Telegram",
+    phoneLabel: "Phone / Telegram / WhatsApp",
     locationLabel: "Location",
     location: "Amir Temur Street, 101, near Ahmadbek complex, Namangan",
-    telegramLabel: "Telegram",
+    telegramLabel: "Telegram / WhatsApp",
+    instagramLabel: "Instagram",
     name: "Full name",
     namePlaceholder: "Your name",
     phone: "Phone number",
@@ -103,78 +105,79 @@ const data = {
   },
   uz: {
     brand: "IT School Namangan",
-    tagline: "O‘rganing. Yarating. Ishga kiring.",
-    nav: ["Kurslar", "Biz haqimizda", "Yo‘l xaritasi", "Aloqa"],
-    badge: "Namanganda amaliy IT ta’lim",
-    heroTitle: "IT, dizayn, ingliz tili va zamonaviy ish uchun real ko‘nikmalarni o‘rganing.",
+    tagline: "O'rganing. Yarating. Ishga kiring.",
+    nav: ["Kurslar", "Biz haqimizda", "Yo'l xaritasi", "Aloqa"],
+    badge: "Namanganda amaliy IT ta'lim",
+    heroTitle: "IT, dizayn, ingliz tili va zamonaviy ish uchun real ko'nikmalarni o'rganing.",
     heroText:
-      "IT School Namangan boshlovchilar va kelajak mutaxassislari uchun amaliy kurslar o‘rgatadi: kompyuter savodxonligi, web dasturlash, grafik dizayn, AutoCAD & 3D Max, kiberxavfsizlik, Python va ish uchun ingliz tili.",
-    primaryBtn: "Kurslarni ko‘rish",
-    secondaryBtn: "Bog‘lanish",
+      "IT School Namangan boshlovchilar va kelajak mutaxassislari uchun amaliy kurslar o'rgatadi: kompyuter savodxonligi, web dasturlash, grafik dizayn, AutoCAD & 3D Max, kiberxavfsizlik, Pytho[...]",
+    primaryBtn: "Kurslarni ko'rish",
+    secondaryBtn: "Bog'lanish",
     apply: "Ariza qoldirish",
     stats: [
       ["8", "Amaliy kurs"],
       ["1-9", "Oylik dasturlar"],
-      ["100%", "Amaliy ta’lim"],
-      ["0→Ko‘nikma", "Boshlang‘ich yo‘l"],
+      ["100%", "Amaliy ta'lim"],
+      ["0→Ko'nikma", "Boshlang'ich yo'l"],
     ],
-    progressTitle: "O‘quvchi rivoji",
+    progressTitle: "O'quvchi rivoji",
     active: "Faol",
-    progress: ["Kompyuter ko‘nikmalari", "Web dasturlash", "Python", "Inglizcha speaking"],
+    progress: ["Kompyuter ko'nikmalari", "Web dasturlash", "Python", "Inglizcha speaking"],
     tasks: "Haftalik amaliy vazifalar",
     projects: "Har moduldagi loyihalar",
     coursesLabel: "Kurslar",
     coursesTitle: "Bizning kurslarimiz",
     coursesText:
-      "O‘quvchilar yo‘nalish tanlaydi, muntazam mashq qiladi va quruq sertifikat o‘rniga foydali ko‘nikma oladi. Nihoyat, ta’lim biroz mantiqli ko‘rinadi.",
+      "O'quvchilar yo'nalish tanlaydi, muntazam mashq qiladi va quruq sertifikat o'rniga foydali ko'nikma oladi. Nihoyat, ta'lim biroz mantiqli ko'rinadi.",
     courses: [
-      ["Kompyuter savodxonligi", "1 oy", "Asosiy kompyuter ko‘nikmalari", ["Kompyuter asoslari", "Hujjatlar va fayllar", "Office dasturlari va kundalik raqamli ko‘nikmalar"]],
+      ["Kompyuter savodxonligi", "1 oy", "Asosiy kompyuter ko'nikmalari", ["Kompyuter asoslari", "Hujjatlar va fayllar", "Office dasturlari va kundalik raqamli ko'nikmalar"]],
       ["Front-End Web", "6 oy", "Sayt interfeysi yaratish", ["HTML, CSS, JavaScript", "Moslashuvchan saytlar", "Portfolio loyihalar"]],
-      ["Back-End Web", "5 oy", "Server tomoni dasturlash", ["Backend logika", "Ma’lumotlar bazasi", "Web ilova asoslari"]],
+      ["Back-End Web", "5 oy", "Server tomoni dasturlash", ["Backend logika", "Ma'lumotlar bazasi", "Web ilova asoslari"]],
       ["Grafik dizayn", "5 oy", "Kreativ raqamli dizayn", ["Adobe Photoshop", "Brend va ijtimoiy tarmoq dizayni", "Portfolio tayyorlash"]],
       ["AutoCAD & 3D Max", "6 oy", "Arxitektura va 3D dizayn", ["Texnik chizmalar", "3D modeling", "Interyer va eksteryer loyihalar"]],
       ["Kiberxavfsizlik", "9 oy", "Xavfsizlik asoslari", ["Tarmoq xavfsizligi asoslari", "Xavfsiz tizimlar", "Amaliy xavfsizlik fikrlashi"]],
       ["Python dasturlash", "9 oy", "Noldan dasturlash", ["Python asoslari", "Muammo yechish", "Avtomatlashtirish va loyiha amaliyoti"]],
-      ["Ingliz tili ish va muloqot uchun", "6+2 oy", "Speaking va ishdagi ingliz tili", ["Speaking amaliyoti", "Ishdagi muloqot", "Suhbat va kundalik gaplashuv ko‘nikmalari"]],
+      ["Ingliz tili ish va muloqot uchun", "6+2 oy", "Speaking va ishdagi ingliz tili", ["Speaking amaliyoti", "Ishdagi muloqot", "Suhbat va kundalik gaplashuv ko'nikmalari"]],
     ],
     aboutLabel: "Biz haqimizda",
-    aboutTitle: "Real hayotda kerak bo‘ladigan ko‘nikmalar maktabi.",
+    aboutTitle: "Real hayotda kerak bo'ladigan ko'nikmalar maktabi.",
     aboutText:
-      "IT School Namangan o‘quvchilarga hozirgi darajasidan boshlab o‘qish, ish, freelancing va kelajak karyerasi uchun foydali ko‘nikmalarni rivojlantirishga yordam beradi.",
+      "IT School Namangan o'quvchilarga hozirgi darajasidan boshlab o'qish, ish, freelancing va kelajak karyerasi uchun foydali ko'nikmalarni rivojlantirishga yordam beradi.",
     missionTitle: "Maqsadimiz",
     missionText:
-      "O‘quvchilarga IT, dizayn, kompyuter, kiberxavfsizlik, dasturlash va ingliz tili bo‘yicha amaliy ko‘nikmalarni o‘rgatish hamda motivatsiyali o‘quvchilarni real ish imkoniyatlariga yaqinlashtirish.",
+      "O'quvchilarga IT, dizayn, kompyuter, kiberxavfsizlik, dasturlash va ingliz tili bo'yicha amaliy ko'nikmalarni o'rgatish hamda motivatsiyali o'quvchilarni real ish imkoniyatlariga[...]",
     features: [
-      ["Boshlovchilar uchun qulay darslar", "O‘quvchilar noldan boshlashi va amaliyot hamda o‘qituvchi yordami bilan bosqichma-bosqich rivojlanishi mumkin."],
-      ["Ishga yo‘naltirilgan ta’lim", "Darslar o‘quvchilar ishda, freelancingda va suhbatlarda ishlata oladigan real ko‘nikmalar bilan bog‘langan."],
-      ["Zamonaviy raqamli ko‘nikmalar", "Kurslar web, dizayn, dasturlash, kiberxavfsizlik, kompyuter savodxonligi va ingliz tilini qamrab oladi."],
-      ["Qo‘llab-quvvatlovchi muhit", "O‘quvchilar guruhda amaliy topshiriqlar, fikr-mulohaza va aniq rivojlanish bilan o‘rganadi."],
+      ["Boshlovchilar uchun qulay darslar", "O'quvchilar noldan boshlashi va amaliyot hamda o'qituvchi yordami bilan bosqichma-bosqich rivojlanishi mumkin."],
+      ["Ishga yo'naltirilgan ta'lim", "Darslar o'quvchilar ishda, freelancingda va suhbatlarda ishlata oladigan real ko'nikmalar bilan bog'langan."],
+      ["Zamonaviy raqamli ko'nikmalar", "Kurslar web, dizayn, dasturlash, kiberxavfsizlik, kompyuter savodxonligi va ingliz tilini qamrab oladi."],
+      ["Qo'llab-quvvatlovchi muhit", "O'quvchilar guruhda amaliy topshiriqlar, fikr-mulohaza va aniq rivojlanish bilan o'rganadi."],
     ],
-    pathwayLabel: "Yo‘l xaritasi",
-    pathwayTitle: "O‘quvchilar biz bilan qanday rivojlanadi.",
+    pathwayLabel: "Yo'l xaritasi",
+    pathwayTitle: "O'quvchilar biz bilan qanday rivojlanadi.",
     steps: [
-      ["Kurs tanlash", "O‘quvchilar maqsadi va darajasiga mos yo‘nalishni tanlaydi."],
-      ["Bosqichma-bosqich o‘rganish", "Har bir kurs darslar, amaliyot va uy vazifalari orqali bilimni mustahkamlaydi."],
-      ["Real ish yaratish", "O‘quvchilar kursga qarab topshiriq, dizayn, sayt yoki loyiha namunalarini tayyorlaydi."],
-      ["Kelajak ishga tayyorlanish", "Kuchli o‘quvchilar amaliyot, freelancing, suhbat yoki junior lavozimlarga tayyorlanadi."],
+      ["Kurs tanlash", "O'quvchilar maqsadi va darajasiga mos yo'nalishni tanlaydi."],
+      ["Bosqichma-bosqich o'rganish", "Har bir kurs darslar, amaliyot va uy vazifalari orqali bilimni mustahkamlaydi."],
+      ["Real ish yaratish", "O'quvchilar kursga qarab topshiriq, dizayn, sayt yoki loyiha namunalarini tayyorlaydi."],
+      ["Kelajak ishga tayyorlanish", "Kuchli o'quvchilar amaliyot, freelancing, suhbat yoki junior lavozimlarga tayyorlanadi."],
     ],
-    ctaTitle: "O‘qishni boshlashga tayyormisiz?",
-    ctaText: "Kursga ariza qoldiring, maktabimizga tashrif buyuring yoki mos dastur tanlash uchun biz bilan bog‘laning.",
+    ctaTitle: "O'qishni boshlashga tayyormisiz?",
+    ctaText: "Kursga ariza qoldiring, maktabimizga tashrif buyuring yoki mos dastur tanlash uchun biz bilan bog'laning.",
     contactLabel: "Aloqa",
     contactTitle: "IT School Namanganga tashrif buyuring.",
-    contactText: "Kurslar, guruh jadvali, narxlar va ro‘yxatdan o‘tish bo‘yicha biz bilan bog‘laning.",
-    phoneLabel: "Telefon / Telegram",
+    contactText: "Kurslar, guruh jadvali, narxlar va ro'yxatdan o'tish bo'yicha biz bilan bog'laning.",
+    phoneLabel: "Telefon / Telegram / WhatsApp",
     locationLabel: "Manzil",
-    location: "Amir Temur ko‘chasi 101-uy, Ahmadbek majmuasi oldida, Namangan",
-    telegramLabel: "Telegram",
-    name: "To‘liq ism",
+    location: "Amir Temur ko'chasi 101-uy, Ahmadbek majmuasi oldida, Namangan",
+    telegramLabel: "Telegram / WhatsApp",
+    instagramLabel: "Instagram",
+    name: "To'liq ism",
     namePlaceholder: "Ismingiz",
     phone: "Telefon raqam",
     courseInterest: "Qiziqqan kurs",
     message: "Xabar",
     messagePlaceholder: "Savolingizni yozing...",
     submit: "Ariza yuborish",
-    note: "Forma hozircha faqat ko‘rinish uchun. Nashr qilishdan oldin Telegram, Google Forms yoki backend ulash kerak.",
+    note: "Forma hozircha faqat ko'rinish uchun. Nashr qilishdan oldin Telegram, Google Forms yoki backend ulash kerak.",
     footer: "Barcha huquqlar himoyalangan.",
   },
   ru: {
@@ -184,7 +187,7 @@ const data = {
     badge: "Практическое IT-образование в Намангане",
     heroTitle: "Изучайте реальные навыки для IT, дизайна, английского и современной работы.",
     heroText:
-      "IT School Namangan обучает практическим курсам для начинающих и будущих специалистов: компьютерная грамотность, веб-разработка, графический дизайн, AutoCAD & 3D Max, кибербезопасность, Python и английский для работы.",
+      "IT School Namangan обучает практическим курсам для начинающих и будущих специалистов: компьютерная грамотнос[...]",
     primaryBtn: "Смотреть курсы",
     secondaryBtn: "Связаться",
     apply: "Оставить заявку",
@@ -202,47 +205,48 @@ const data = {
     coursesLabel: "Курсы",
     coursesTitle: "Наши курсы",
     coursesText:
-      "Студенты выбирают направление, регулярно практикуются и получают полезные навыки вместо пустых сертификатов для украшения стены.",
+      "Студенты выбирают направление, регулярно практикуются и получают полезные навыки вместо пустых серти[...]",
     courses: [
-      ["Компьютерная грамотность", "1 месяц", "Базовые компьютерные навыки", ["Основы компьютера", "Документы и файлы", "Office-программы и повседневные цифровые навыки"]],
-      ["Front-End Web", "6 месяцев", "Разработка интерфейсов сайтов", ["HTML, CSS, JavaScript", "Адаптивные сайты", "Проекты для портфолио"]],
+      ["Компьютерная грамотность", "1 месяц", "Базовые компьютерные навыки", ["Основы компьютера", "Документы и фа[...]"],
+      ["Front-End Web", "6 месяцев", "Разработка интерфейсов сайтов", ["HTML, CSS, JavaScript", "Адаптивные сайты", "Проекты для пор[...]"],
       ["Back-End Web", "5 месяцев", "Серверная разработка", ["Backend-логика", "Базы данных", "Основы веб-приложений"]],
-      ["Графический дизайн", "5 месяцев", "Креативный цифровой дизайн", ["Adobe Photoshop", "Брендинг и дизайн для соцсетей", "Подготовка портфолио"]],
-      ["AutoCAD & 3D Max", "6 месяцев", "Архитектура и 3D-дизайн", ["Технические чертежи", "3D-моделирование", "Интерьерные и экстерьерные проекты"]],
-      ["Кибербезопасность", "9 месяцев", "Основы безопасности", ["Основы сетевой безопасности", "Безопасные системы", "Практическое мышление безопасности"]],
-      ["Программирование на Python", "9 месяцев", "Программирование с нуля", ["Основы Python", "Решение задач", "Автоматизация и проектная практика"]],
-      ["Английский для работы и общения", "6+2 месяцев", "Speaking и рабочий английский", ["Разговорная практика", "Рабочая коммуникация", "Собеседования и ежедневное общение"]],
+      ["Графический дизайн", "5 месяцев", "Креативный цифровой дизайн", ["Adobe Photoshop", "Брендинг и дизайн для соцсете[...]"],
+      ["AutoCAD & 3D Max", "6 месяцев", "Архитектура и 3D-дизайн", ["Технические чертежи", "3D-моделирование", "Интерьерные и [...]"],
+      ["Кибербезопасность", "9 месяцев", "Основы безопасности", ["Основы сетевой безопасности", "Безопасные систе[...]"],
+      ["Программирование на Python", "9 месяцев", "Программирование с нуля", ["Основы Python", "Решение задач", "Автоматиз[...]"],
+      ["Английский для работы и общения", "6+2 месяцев", "Speaking и рабочий английский", ["Разговорная практика", "Рабо[...]"],
     ],
     aboutLabel: "О нас",
     aboutTitle: "Школа практических навыков для реальной жизни.",
     aboutText:
-      "IT School Namangan помогает студентам развивать полезные навыки для учебы, работы, фриланса и будущей карьеры, начиная с их текущего уровня.",
+      "IT School Namangan помогает студентам развивать полезные навыки для учебы, работы, фриланса и будущей карьеры, [...]",
     missionTitle: "Наша миссия",
     missionText:
-      "Обучать студентов практическим навыкам в IT, дизайне, компьютерах, кибербезопасности, программировании и английском, а также приближать мотивированных учеников к реальным рабочим возможностям.",
+      "Обучать студентов практическим навыкам в IT, дизайне, компьютерах, кибербезопасности, программировани[...]",
     features: [
-      ["Уроки для начинающих", "Студенты могут начать с нуля и развиваться шаг за шагом через практику и поддержку преподавателя."],
-      ["Обучение для работы", "Уроки связаны с реальными навыками, которые студенты могут использовать в работе, фрилансе и на собеседованиях."],
-      ["Современные цифровые навыки", "Курсы охватывают веб, дизайн, программирование, кибербезопасность, компьютерную грамотность и английский."],
-      ["Поддерживающая среда", "Студенты учатся в группах через практические задания, обратную связь и понятный прогресс."],
+      ["Уроки для начинающих", "Студенты могут начать с нуля и развиваться шаг за шагом через практику и поддер[...]"],
+      ["Обучение для работы", "Уроки связаны с реальными навыками, которые студенты могут использовать в работ[...]"],
+      ["Современные цифровые навыки", "Курсы охватывают веб, дизайн, программирование, кибербезопасность, ком[...]"],
+      ["Поддерживающая среда", "Студенты учатся в группах через практические задания, обратную связь и понятн[...]"],
     ],
     pathwayLabel: "Путь",
     pathwayTitle: "Как студенты растут вместе с нами.",
     steps: [
       ["Выбор курса", "Студенты выбирают направление, которое подходит их цели и текущему уровню."],
       ["Пошаговое обучение", "Каждый курс закрепляет знания через уроки, практику и домашние задания."],
-      ["Создание реальных работ", "Студенты готовят задания, дизайны, сайты или проекты в зависимости от курса."],
-      ["Подготовка к будущей работе", "Сильные студенты готовятся к стажировкам, фрилансу, интервью или junior-позициям."],
+      ["Создание реальных работ", "Студенты готовят задания, дизайны, сайты или проекты в зависимости от курса.[...]"],
+      ["Подготовка к будущей работе", "Сильные студенты готовятся к стажировкам, фрилансу, интервью или junior-по[...]"],
     ],
     ctaTitle: "Готовы начать обучение?",
     ctaText: "Оставьте заявку, посетите нашу школу или свяжитесь с нами, чтобы выбрать подходящую программу.",
     contactLabel: "Контакты",
     contactTitle: "Посетите IT School Namangan.",
     contactText: "Свяжитесь с нами для информации о курсах, расписании групп, ценах и регистрации студентов.",
-    phoneLabel: "Телефон / Telegram",
+    phoneLabel: "Телефон / Telegram / WhatsApp",
     locationLabel: "Адрес",
     location: "улица Амира Темура, дом 101, рядом с комплексом Ahmadbek, Наманган",
-    telegramLabel: "Telegram",
+    telegramLabel: "Telegram / WhatsApp",
+    instagramLabel: "Instagram",
     name: "Полное имя",
     namePlaceholder: "Ваше имя",
     phone: "Номер телефона",
@@ -333,7 +337,7 @@ function App() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.1 }} className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/30 backdrop-blur">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.1 }} className="rounded-[2rem] border border-white/10 bg-white/5 p-1">
               <div className="rounded-[1.5rem] bg-slate-900 p-6">
                 <div className="mb-5 flex items-center justify-between">
                   <p className="font-bold text-slate-200">{t.progressTitle}</p>
@@ -442,7 +446,7 @@ function App() {
         </section>
 
         <section className="px-5 pb-20 lg:px-8">
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-lime-400 to-green-500 p-8 text-slate-950 shadow-2xl shadow-lime-400/20 lg:p-12">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-lime-400 to-green-500 p-8 text-slate-950 shadow-2xl shadow-lime-400/20 lg:flex lg:items-center lg:justify-between">
             <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
               <div>
                 <h2 className="text-3xl font-black tracking-tight sm:text-5xl">{t.ctaTitle}</h2>
@@ -462,9 +466,10 @@ function App() {
               <h2 className="text-3xl font-black tracking-tight sm:text-5xl">{t.contactTitle}</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">{t.contactText}</p>
               <div className="mt-8 space-y-4">
-                <ContactCard icon={Phone} label={t.phoneLabel} value="+998 99 597 44 11" />
+                <ContactCard icon={Phone} label={t.phoneLabel} value="+974 50114353" />
                 <ContactCard icon={MapPin} label={t.locationLabel} value={t.location} />
-                <ContactCard icon={Send} label={t.telegramLabel} value="@itshool_reception" />
+                <ContactCard icon={Send} label={t.telegramLabel} value="+974 50114353" />
+                <ContactCard icon={Instagram} label={t.instagramLabel} value="@ilyosbekmukhiddinov" />
               </div>
             </div>
 
